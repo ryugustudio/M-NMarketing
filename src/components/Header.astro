@@ -13,8 +13,8 @@ const {home = false, about = false, contact = false} = Astro.props
             <button aria-label="Close navigation" class="close-nav">&times;</button>
             <ul class="nav-list">
                 <li class="nav-item"><a href="/" class:list={['nav-link', {current: home}]}>home</a></li>
-                <li class="nav-item"><a href="about" class:list={['nav-link', {current: about}]}>about us</a></li>
-                <li class="nav-item"><a href="contact" class:list={['nav-link', {current: contact}]}>contact</a></li>
+                <li class="nav-item"><a href="/about" class:list={['nav-link', {current: about}]}>about us</a></li>
+                <li class="nav-item"><a href="/contact" class:list={['nav-link', {current: contact}]}>contact</a></li>
             </ul>
         </nav>
     </div>
