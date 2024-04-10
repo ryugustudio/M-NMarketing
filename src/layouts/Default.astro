@@ -2,6 +2,8 @@
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import '../style.css'
+
+const {home = false, about = false, contact = false} = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -20,7 +22,7 @@ import '../style.css'
           rel="stylesheet">
     <title>N&M Marketing</title>
 </head>
-<Header/>
+<Header home={home} about={about} contact={contact}/>
 <main>
     <slot></slot>
 </main>
