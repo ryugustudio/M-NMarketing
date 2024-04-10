@@ -319,11 +319,13 @@ h1, h2, strong {
 ===================== */
 
 .hero {
-    background-image: url(img/hero-bg.jpg);
+    background-image: url(images/beardman.webp);
     background-size: cover;
-    background-position: bottom;
+    background-repeat: no-repeat;
+    background-position:center top;
     padding: 8em 0 4em;
     color: #fff;
+    background-color: black;
 }
 
 .hero > * {

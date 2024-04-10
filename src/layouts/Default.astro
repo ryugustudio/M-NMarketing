@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import { ViewTransitions } from 'astro:transitions'
 import '../style.css'
 
 const {home = false, about = false, contact = false} = Astro.props
@@ -21,16 +22,9 @@ const {home = false, about = false, contact = false} = Astro.props
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <title>N&M Marketing</title>
+    <ViewTransitions />
 </head>
 <Header home={home} about={about} contact={contact}/>
-<main>
     <slot></slot>
-</main>
 <Footer/>
 </html>
-
-<style>
-    main {
-        min-height: 1vh;
-    }
-</style>
