@@ -22,6 +22,7 @@ const {home = false, about = false, contact = false} = Astro.props
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <title>N&M Marketing</title>
+    <script is:inline src="/script.js" defer></script>
     <ViewTransitions />
 </head>
 <Header home={home} about={about} contact={contact}/>
