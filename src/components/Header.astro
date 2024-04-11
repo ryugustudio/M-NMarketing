@@ -20,7 +20,7 @@ const {home = false, about = false, contact = false} = Astro.props
     </div>
 </header>
 
-<script>
+<script is:inline type="module">
     const closeButton = document.querySelector('.close-nav');
     const openButton = document.querySelector('.open-nav');
     const nav = document.querySelector('.nav');
